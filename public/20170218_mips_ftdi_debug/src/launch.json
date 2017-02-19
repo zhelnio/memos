@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "MIPS Load",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/program.elf",
+            "cwd": "${fileDirname}",
+            "miDebuggerPath": "d:/CODESC~1/TOOLCH~1/mips-mti-elf/2016.05-03/bin/mips-mti-elf-gdb.exe",
+            "setupCommands": [
+                {"text": "file 'D:/mipsfpga-plus/programs/00_counter/program.elf'"},
+                {"text": "target remote localhost:3333"},
+                {"text": "set endian little"},
+                {"text": "monitor reset halt"},
+                {"text": "load"},
+                {"text": "br main"},
+                {"text": "monitor continue"}
+            ],
+            "customLaunchSetupCommands": [],
+            "launchCompleteCommand": "None",
+            "targetArchitecture": "mips"
+
+            //Uncomment this to debug
+            //,"logging": { "engineLogging": true }
+            //or this for verbose debug
+            //,"logging": { "engineLogging": true, "trace": true, "traceResponse": true }
+        },
+        {
+            "name": "MIPS Attach",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/program.elf",
+            "cwd": "${fileDirname}",
+            "miDebuggerPath": "d:/CODESC~1/TOOLCH~1/mips-mti-elf/2015.06-05/bin/mips-mti-elf-gdb.exe",
+            "setupCommands": [
+                {"text": "file 'D:/mipsfpga-plusmipsfpga-plus/programs/00_counter/program.elf'"},
+                {"text": "target remote localhost:3333"},
+                {"text": "set endian little"}
+            ],
+            "customLaunchSetupCommands": [],
+            "launchCompleteCommand": "None",
+            "targetArchitecture": "mips"
+
+            //Uncomment this to debug
+            //,"logging": { "engineLogging": true }
+            //or this for verbose debug
+            //,"logging": { "engineLogging": true, "trace": true, "traceResponse": true }
+        }
+    ]
+}
