@@ -1,0 +1,1 @@
+Please get this doc from the MIPSfpga package
