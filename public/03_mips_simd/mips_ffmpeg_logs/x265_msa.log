@@ -1,0 +1,1515 @@
+ffmpeg started on 2010-10-18 at 00:27:58
+Report written to "ffmpeg-20101018-002758.log"
+Command line:
+./ffmpeg-mips/ffmpeg-msa/bin/ffmpeg -i ./Tears_400_x265.mp4 -vf "fps=1" "./out_img/ffmpeg-msa_x265_%d.jpg" -report -benchmark
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 4.9.2 (Codescape GNU Tools 2016.05-03 for MIPS MTI Linux)
+  configuration: --enable-cross-compile --prefix=../ffmpeg-msa --cross-prefix=/home/stas/mipsfpga/toolchain/mips-mti-linux-gnu/2016.05-03/bin/mips-mti-linux-gnu- --arch=mips --cpu=p5600 --target-os=linux --extra-cflags='-EL -static' --extra-ldflags='-EL -static' --disable-iconv
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+Splitting the commandline.
+Reading option '-i' ... matched as input url with argument './Tears_400_x265.mp4'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'fps=1'.
+Reading option './out_img/ffmpeg-msa_x265_%d.jpg' ... matched as output url.
+Reading option '-report' ... matched as option 'report' (generate a report) with argument '1'.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option report (generate a report) with argument 1.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url ./Tears_400_x265.mp4.
+Successfully parsed a group of options.
+Opening an input file: ./Tears_400_x265.mp4.
+[file @ 0x1fce0e0] Setting default whitelist 'file,crypto'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] ISO: File Type Major Brand: iso4
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] Before avformat_find_stream_info() pos: 705972 bytes read:32827 seeks:1 nb_streams:1
+[hevc @ 0x1fceca0] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fceca0] Decoding VPS
+[hevc @ 0x1fceca0] Main profile bitstream
+[hevc @ 0x1fceca0] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fceca0] Decoding SPS
+[hevc @ 0x1fceca0] Main profile bitstream
+[hevc @ 0x1fceca0] Decoding VUI
+[hevc @ 0x1fceca0] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fceca0] Decoding PPS
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] All info found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x1fcd980] After avformat_find_stream_info() pos: 20299 bytes read:65595 seeks:2 frames:1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from './Tears_400_x265.mp4':
+  Metadata:
+    major_brand     : iso4
+    minor_version   : 1
+    compatible_brands: iso4hvc1
+    creation_time   : 2014-08-25T18:10:46.000000Z
+  Duration: 00:00:13.96, start: 0.125000, bitrate: 404 kb/s
+    Stream #0:0(und), 1, 1/24000: Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv), 1920x800, 402 kb/s, 24 fps, 24 tbr, 24k tbn, 24 tbc (default)
+    Metadata:
+      creation_time   : 2014-08-25T18:10:46.000000Z
+      handler_name    : hevc:fps=24@GPAC0.5.1-DEV-rev4807
+Successfully opened the file.
+Parsing a group of options: output url ./out_img/ffmpeg-msa_x265_%d.jpg.
+Applying option vf (set video filters) with argument fps=1.
+Successfully parsed a group of options.
+Opening an output file: ./out_img/ffmpeg-msa_x265_%d.jpg.
+Successfully opened the file.
+detected 2 logical cores
+[hevc @ 0x1fe5a00] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Decoding VPS
+[hevc @ 0x1fe5a00] Main profile bitstream
+[hevc @ 0x1fe5a00] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Decoding SPS
+[hevc @ 0x1fe5a00] Main profile bitstream
+[hevc @ 0x1fe5a00] Decoding VUI
+[hevc @ 0x1fe5a00] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Decoding PPS
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1fe5a00] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] nal_unit_type: 19(IDR_W_RADL), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Decoding SEI
+[hevc @ 0x1fe5a00] Skipped PREFIX SEI 5
+[hevc @ 0x1fe5a00] Decoding SEI
+[hevc @ 0x1fe5a00] Skipped PREFIX SEI 6
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 0.
+[hevc @ 0x1fe5a00] Decoded frame with POC 0.
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 1.
+[hevc @ 0x1ffeba0] Decoded frame with POC 5.
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 2.
+[hevc @ 0x200c4d0] Decoded frame with POC 3.
+[Parsed_fps_0 @ 0x201a6c0] Setting 'fps' to value '1'
+[Parsed_fps_0 @ 0x201a6c0] fps=1/1
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'video_size' to value '1920x800'
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'pix_fmt' to value '0'
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'time_base' to value '1/24000'
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'pixel_aspect' to value '0/1'
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 0x201abb0] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 0x201abb0] w:1920 h:800 pixfmt:yuv420p tb:1/24000 fr:24/1 sar:0/1 sws_param:flags=2
+[format @ 0x201aad0] compat: called with args=[yuvj420p|yuvj422p|yuvj444p]
+[format @ 0x201aad0] Setting 'pix_fmts' to value 'yuvj420p|yuvj422p|yuvj444p'
+[auto_scaler_0 @ 0x201a350] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 0x201a350] w:iw h:ih flags:'bicubic' interl:0
+[format @ 0x201aad0] auto-inserting filter 'auto_scaler_0' between the filter 'Parsed_fps_0' and the filter 'format'
+[AVFilterGraph @ 0x201a2f0] query_formats: 4 queried, 2 merged, 1 already done, 0 delayed
+[auto_scaler_0 @ 0x201a350] picking yuvj420p out of 3 ref:yuv420p alpha:0
+[swscaler @ 0x21d7da0] deprecated pixel format used, make sure you did set range correctly
+[auto_scaler_0 @ 0x201a350] w:1920 h:800 fmt:yuv420p sar:0/1 -> w:1920 h:800 fmt:yuvj420p sar:0/1 flags:0x4
+[mjpeg @ 0x1fe2ba0] Forcing thread count to 1 for MJPEG encoding, use -thread_type slice or a constant quantizer if you want to use multiple cpu cores
+[mjpeg @ 0x1fe2ba0] intra_quant_bias = 96 inter_quant_bias = 0
+Output #0, image2, to './out_img/ffmpeg-msa_x265_%d.jpg':
+  Metadata:
+    major_brand     : iso4
+    minor_version   : 1
+    compatible_brands: iso4hvc1
+    encoder         : Lavf57.71.100
+    Stream #0:0(und), 0, 1/1: Video: mjpeg, yuvj420p(pc), 1920x800, q=2-31, 200 kb/s, 1 fps, 1 tbn, 1 tbc (default)
+    Metadata:
+      creation_time   : 2014-08-25T18:10:46.000000Z
+      handler_name    : hevc:fps=24@GPAC0.5.1-DEV-rev4807
+      encoder         : Lavc57.89.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 3.
+[hevc @ 0x1fe5a00] Decoded frame with POC 1.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Decoded frame with POC 2.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Output frame with POC 4.
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 5.
+[hevc @ 0x1fe5a00] Decoded frame with POC 10.
+[hevc @ 0x200c4d0] Decoded frame with POC 4.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 6.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 7.
+[hevc @ 0x1ffeba0] Decoded frame with POC 8.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 8.
+[hevc @ 0x1ffeba0] Decoded frame with POC 9.
+[hevc @ 0x1fe5a00] Decoded frame with POC 7.
+[hevc @ 0x200c4d0] Decoded frame with POC 6.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x200c4d0] Output frame with POC 9.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 10.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 11.
+[hevc @ 0x200c4d0] Decoded frame with POC 15.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 12.
+[hevc @ 0x1fe5a00] Decoded frame with POC 13.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 13.
+[hevc @ 0x1ffeba0] Decoded frame with POC 11.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 14.
+[hevc @ 0x200c4d0] Decoded frame with POC 12.
+[hevc @ 0x1fe5a00] Decoded frame with POC 14.
+[hevc @ 0x1ffeba0] Decoded frame with POC 23.
+Clipping frame in rate conversion by 0.000008
+[file @ 0x20f9020] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x21d7900] Statistics: 0 seeks, 3 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 15.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 16.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 17.
+[hevc @ 0x200c4d0] Decoded frame with POC 19.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 18.
+[hevc @ 0x1ffeba0] Decoded frame with POC 17.
+[hevc @ 0x1fe5a00] Decoded frame with POC 16.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 19.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 20.
+[hevc @ 0x200c4d0] Decoded frame with POC 18.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 21.
+[hevc @ 0x1fe5a00] Decoded frame with POC 20.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 22.
+[hevc @ 0x1ffeba0] Decoded frame with POC 21.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 23.
+[hevc @ 0x200c4d0] Decoding SEI
+[hevc @ 0x200c4d0] Skipped PREFIX SEI 6
+[hevc @ 0x200c4d0] Decoded frame with POC 22.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Decoded frame with POC 24.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    1 fps=1.0 q=5.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.954x    [hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 24.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 25.
+[hevc @ 0x1ffeba0] Decoded frame with POC 29.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 26.
+[hevc @ 0x200c4d0] Decoded frame with POC 27.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 27.
+[hevc @ 0x1ffeba0] Decoded frame with POC 26.
+[hevc @ 0x1fe5a00] Decoded frame with POC 25.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 28.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 29.
+[hevc @ 0x200c4d0] Decoded frame with POC 28.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 30.
+[hevc @ 0x1fe5a00] Decoded frame with POC 33.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 31.
+[hevc @ 0x1ffeba0] Decoded frame with POC 31.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 32.
+[hevc @ 0x200c4d0] Decoded frame with POC 30.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 33.
+[hevc @ 0x1fe5a00] Decoded frame with POC 32.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 34.
+[hevc @ 0x1ffeba0] Decoded frame with POC 38.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 35.
+[hevc @ 0x200c4d0] Decoded frame with POC 36.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 36.
+[hevc @ 0x1ffeba0] Decoded frame with POC 35.
+[hevc @ 0x1fe5a00] Decoded frame with POC 34.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    1 fps=0.6 q=5.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.64x    [hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 37.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 38.
+[hevc @ 0x200c4d0] Decoded frame with POC 37.
+[hevc @ 0x1fe5a00] Decoded frame with POC 42.
+[hevc @ 0x1ffeba0] Decoded frame with POC 40.
+[file @ 0x22058a0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x2205970] Statistics: 0 seeks, 3 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 39.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 40.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 41.
+[hevc @ 0x1ffeba0] Decoded frame with POC 51.
+[hevc @ 0x200c4d0] Decoded frame with POC 39.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 42.
+[hevc @ 0x1fe5a00] Decoded frame with POC 41.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 43.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 44.
+[hevc @ 0x200c4d0] Decoded frame with POC 47.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 45.
+[hevc @ 0x200c4d0] Decoded frame with POC 45.
+[hevc @ 0x1ffeba0] Decoded frame with POC 44.
+[hevc @ 0x1fe5a00] Decoded frame with POC 43.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 46.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 47.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 48.
+[hevc @ 0x1fe5a00] Decoded frame with POC 46.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 49.
+[hevc @ 0x200c4d0] Decoded frame with POC 49.
+[hevc @ 0x1fe5a00] Decoded frame with POC 50.
+[hevc @ 0x1ffeba0] Decoded frame with POC 48.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    2 fps=1.0 q=3.8 size=N/A time=00:00:02.00 bitrate=N/A speed=0.964x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 50.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 51.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 52.
+[hevc @ 0x1ffeba0] Decoding SEI
+[hevc @ 0x1ffeba0] Skipped PREFIX SEI 6
+[hevc @ 0x1ffeba0] Decoded frame with POC 52.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 53.
+[hevc @ 0x200c4d0] Decoded frame with POC 53.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 54.
+[hevc @ 0x1fe5a00] Decoded frame with POC 60.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 55.
+[hevc @ 0x1ffeba0] Decoded frame with POC 57.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 56.
+[hevc @ 0x200c4d0] Decoded frame with POC 54.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Decoded frame with POC 55.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 57.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 58.
+[hevc @ 0x1ffeba0] Decoded frame with POC 56.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 59.
+[hevc @ 0x1fe5a00] Decoded frame with POC 59.
+[hevc @ 0x200c4d0] Decoded frame with POC 58.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 60.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 61.
+[hevc @ 0x1ffeba0] Decoded frame with POC 65.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 62.
+[hevc @ 0x200c4d0] Decoded frame with POC 63.
+[hevc @ 0x1fe5a00] Decoded frame with POC 61.
+[hevc @ 0x1ffeba0] Decoded frame with POC 62.
+[file @ 0x227daf0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227d9d0] Statistics: 0 seeks, 5 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 63.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    3 fps=1.1 q=1.6 size=N/A time=00:00:03.00 bitrate=N/A speed=1.09x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 64.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 65.
+[hevc @ 0x200c4d0] Decoded frame with POC 64.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 66.
+[hevc @ 0x1fe5a00] Decoded frame with POC 71.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 67.
+[hevc @ 0x1ffeba0] Decoded frame with POC 68.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 68.
+[hevc @ 0x200c4d0] Decoded frame with POC 66.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 69.
+[hevc @ 0x1ffeba0] Decoded frame with POC 69.
+[hevc @ 0x1fe5a00] Decoded frame with POC 67.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 70.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 71.
+[hevc @ 0x200c4d0] Decoded frame with POC 70.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 72.
+[hevc @ 0x1fe5a00] Decoded frame with POC 72.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 73.
+[hevc @ 0x1ffeba0] Decoded frame with POC 76.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 74.
+[hevc @ 0x200c4d0] Decoded frame with POC 74.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 75.
+[hevc @ 0x1fe5a00] Decoded frame with POC 73.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 76.
+[hevc @ 0x200c4d0] Decoded frame with POC 79.
+[hevc @ 0x1ffeba0] Decoded frame with POC 75.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+frame=    3 fps=0.9 q=1.6 size=N/A time=00:00:03.00 bitrate=N/A speed=0.91x    [hevc @ 0x1ffeba0] Output frame with POC 77.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 78.
+[hevc @ 0x1fe5a00] Decoded frame with POC 78.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 79.
+[hevc @ 0x1ffeba0] Decoded frame with POC 77.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 80.
+[hevc @ 0x200c4d0] Decoded frame with POC 83.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 81.
+[hevc @ 0x1fe5a00] Decoded frame with POC 81.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 82.
+[hevc @ 0x200c4d0] Decoded frame with POC 82.
+[hevc @ 0x1ffeba0] Decoded frame with POC 80.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 83.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 84.
+[hevc @ 0x1fe5a00] Decoded frame with POC 86.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 85.
+[hevc @ 0x1ffeba0] Decoded frame with POC 85.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 86.
+[hevc @ 0x200c4d0] Decoded frame with POC 84.
+[hevc @ 0x1fe5a00] Decoded frame with POC 90.
+[hevc @ 0x1ffeba0] Decoded frame with POC 88.
+[file @ 0x227b380] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x22cc5e0] Statistics: 0 seeks, 5 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 87.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    4 fps=1.0 q=1.6 size=N/A time=00:00:04.00 bitrate=N/A speed=1.04x    [hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 88.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 89.
+[hevc @ 0x200c4d0] Decoded frame with POC 87.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 90.
+[hevc @ 0x1fe5a00] Decoded frame with POC 89.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 91.
+[hevc @ 0x1ffeba0] Decoded frame with POC 93.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 92.
+[hevc @ 0x200c4d0] Decoded frame with POC 92.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 93.
+[hevc @ 0x1fe5a00] Decoded frame with POC 91.
+[hevc @ 0x1ffeba0] Decoded frame with POC 97.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 94.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 95.
+[hevc @ 0x200c4d0] Decoded frame with POC 95.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 96.
+[hevc @ 0x1fe5a00] Decoded frame with POC 94.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 97.
+[hevc @ 0x1ffeba0] Decoded frame with POC 96.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 98.
+[hevc @ 0x200c4d0] Decoded frame with POC 104.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 99.
+[hevc @ 0x1fe5a00] Decoded frame with POC 101.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 100.
+[hevc @ 0x200c4d0] Decoded frame with POC 99.
+[hevc @ 0x1ffeba0] Decoded frame with POC 98.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 101.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 102.
+[hevc @ 0x200c4d0] Decoded frame with POC 103.
+[hevc @ 0x1fe5a00] Decoded frame with POC 100.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 103.
+[hevc @ 0x1ffeba0] Decoded frame with POC 102.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    4 fps=0.9 q=1.6 size=N/A time=00:00:04.00 bitrate=N/A speed=0.914x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 104.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 105.
+[hevc @ 0x1fe5a00] Decoded frame with POC 110.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 106.
+[hevc @ 0x1ffeba0] Decoded frame with POC 107.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 107.
+[hevc @ 0x1fe5a00] Decoded frame with POC 106.
+[hevc @ 0x200c4d0] Decoded frame with POC 105.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 108.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 109.
+[hevc @ 0x1ffeba0] Decoded frame with POC 108.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 110.
+[hevc @ 0x1fe5a00] Decoded frame with POC 115.
+[hevc @ 0x200c4d0] Decoded frame with POC 109.
+[hevc @ 0x1ffeba0] Decoded frame with POC 113.
+[file @ 0x227df40] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x22ca0c0] Statistics: 0 seeks, 6 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 111.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    5 fps=1.0 q=2.4 size=N/A time=00:00:05.00 bitrate=N/A speed=1.02x    [hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 112.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 113.
+[hevc @ 0x200c4d0] Decoded frame with POC 111.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Decoded frame with POC 112.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    5 fps=0.8 q=2.4 size=N/A time=00:00:05.00 bitrate=N/A speed=0.778x    [hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 114.
+[hevc @ 0x1ffeba0] Decoded frame with POC 114.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 115.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 116.
+[hevc @ 0x200c4d0] Decoded frame with POC 119.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 117.
+[hevc @ 0x1fe5a00] Decoded frame with POC 117.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] Decoded frame with POC 116.
+[hevc @ 0x200c4d0] Decoding SEI
+[hevc @ 0x200c4d0] Skipped PREFIX SEI 6
+[hevc @ 0x200c4d0] Decoded frame with POC 118.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 118.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    5 fps=0.6 q=2.4 size=N/A time=00:00:05.00 bitrate=N/A speed=0.567x    [hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 119.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 120.
+[hevc @ 0x1fe5a00] Decoded frame with POC 120.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 121.
+[hevc @ 0x1ffeba0] Decoded frame with POC 125.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 122.
+[hevc @ 0x200c4d0] Decoded frame with POC 123.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 123.
+[hevc @ 0x1fe5a00] Decoded frame with POC 121.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 124.
+[hevc @ 0x1ffeba0] Decoded frame with POC 122.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 125.
+[hevc @ 0x1fe5a00] Decoded frame with POC 130.
+[hevc @ 0x200c4d0] Decoded frame with POC 124.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 126.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 127.
+[hevc @ 0x1ffeba0] Decoded frame with POC 128.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 128.
+[hevc @ 0x1ffeba0] Decoded frame with POC 129.
+[hevc @ 0x1fe5a00] Decoded frame with POC 127.
+[hevc @ 0x200c4d0] Decoded frame with POC 126.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 129.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 130.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 131.
+[hevc @ 0x200c4d0] Decoded frame with POC 135.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 132.
+[hevc @ 0x1fe5a00] Decoded frame with POC 133.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 133.
+[hevc @ 0x200c4d0] Decoded frame with POC 132.
+[hevc @ 0x1ffeba0] Decoded frame with POC 131.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    5 fps=0.5 q=2.4 size=N/A time=00:00:05.00 bitrate=N/A speed=0.535x    [hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 134.
+[hevc @ 0x1ffeba0] Decoded frame with POC 140.
+[hevc @ 0x1fe5a00] Decoded frame with POC 134.
+[file @ 0x227c0c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227b450] Statistics: 0 seeks, 3 writeouts
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 135.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 136.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 137.
+[hevc @ 0x200c4d0] Decoded frame with POC 138.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 138.
+[hevc @ 0x200c4d0] Decoded frame with POC 139.
+[hevc @ 0x1fe5a00] Decoded frame with POC 136.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 139.
+[hevc @ 0x1ffeba0] Decoded frame with POC 137.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 140.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 141.
+[hevc @ 0x1fe5a00] Decoded frame with POC 145.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 142.
+[hevc @ 0x1ffeba0] Decoded frame with POC 143.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 143.
+[hevc @ 0x1fe5a00] Decoded frame with POC 142.
+[hevc @ 0x200c4d0] Decoded frame with POC 141.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    6 fps=0.6 q=4.6 size=N/A time=00:00:06.00 bitrate=N/A speed=0.608x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 144.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 145.
+[hevc @ 0x1ffeba0] Decoded frame with POC 144.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 146.
+[hevc @ 0x200c4d0] Decoded frame with POC 150.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Decoded frame with POC 148.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    6 fps=0.5 q=4.6 size=N/A time=00:00:06.00 bitrate=N/A speed=0.536x    [hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 147.
+[hevc @ 0x1ffeba0] Decoded frame with POC 146.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 148.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 149.
+[hevc @ 0x200c4d0] Decoded frame with POC 147.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 150.
+[hevc @ 0x1fe5a00] Decoded frame with POC 149.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 151.
+[hevc @ 0x1ffeba0] Decoded frame with POC 156.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 152.
+[hevc @ 0x200c4d0] Decoded frame with POC 153.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 153.
+[hevc @ 0x1ffeba0] Decoded frame with POC 152.
+[hevc @ 0x1fe5a00] Decoded frame with POC 151.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 154.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 155.
+[hevc @ 0x200c4d0] Decoded frame with POC 154.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 156.
+[hevc @ 0x1ffeba0] Decoded frame with POC 161.
+[hevc @ 0x1fe5a00] Decoded frame with POC 155.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 157.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 158.
+[hevc @ 0x200c4d0] Decoded frame with POC 159.
+[hevc @ 0x1ffeba0] Decoded frame with POC 158.
+[hevc @ 0x1fe5a00] Decoded frame with POC 157.
+[file @ 0x227e520] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x22058a0] Statistics: 0 seeks, 3 writeouts
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+frame=    7 fps=0.5 q=7.2 size=N/A time=00:00:07.00 bitrate=N/A speed=0.515x    [hevc @ 0x200c4d0] Output frame with POC 159.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 160.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 161.
+[hevc @ 0x1fe5a00] Decoded frame with POC 166.
+[hevc @ 0x200c4d0] Decoded frame with POC 160.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 162.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 163.
+[hevc @ 0x1ffeba0] Decoded frame with POC 164.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 164.
+[hevc @ 0x1fe5a00] Decoded frame with POC 163.
+[hevc @ 0x1ffeba0] Decoded frame with POC 165.
+[hevc @ 0x200c4d0] Decoded frame with POC 162.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 165.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 166.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 167.
+[hevc @ 0x200c4d0] Decoded frame with POC 171.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 168.
+[hevc @ 0x1fe5a00] Decoded frame with POC 169.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 169.
+[hevc @ 0x200c4d0] Decoded frame with POC 168.
+[hevc @ 0x1ffeba0] Decoded frame with POC 167.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 170.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 171.
+[hevc @ 0x1fe5a00] Decoded frame with POC 170.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 172.
+[hevc @ 0x1ffeba0] Decoded frame with POC 177.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 173.
+[hevc @ 0x200c4d0] Decoded frame with POC 174.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 174.
+[hevc @ 0x1ffeba0] Decoded frame with POC 173.
+[hevc @ 0x1fe5a00] Decoded frame with POC 172.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    7 fps=0.5 q=7.2 size=N/A time=00:00:07.00 bitrate=N/A speed=0.497x    [hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 175.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 176.
+[hevc @ 0x200c4d0] Decoded frame with POC 175.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 177.
+[hevc @ 0x1ffeba0] Decoded frame with POC 181.
+[hevc @ 0x1fe5a00] Decoded frame with POC 176.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 178.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 179.
+[hevc @ 0x200c4d0] Decoded frame with POC 179.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 180.
+[hevc @ 0x1fe5a00] Decoded frame with POC 178.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 181.
+[hevc @ 0x1ffeba0] Decoded frame with POC 180.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 182.
+[hevc @ 0x200c4d0] Decoded frame with POC 186.
+[hevc @ 0x1fe5a00] Decoded frame with POC 184.
+[hevc @ 0x1ffeba0] Decoded frame with POC 182.
+[file @ 0x227c7e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227c400] Statistics: 0 seeks, 2 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 183.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 184.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 185.
+[hevc @ 0x200c4d0] Decoded frame with POC 183.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 186.
+[hevc @ 0x1fe5a00] Decoded frame with POC 185.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    8 fps=0.5 q=9.9 size=N/A time=00:00:08.00 bitrate=N/A speed=0.547x    [hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 187.
+[hevc @ 0x1ffeba0] Decoded frame with POC 191.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 188.
+[hevc @ 0x200c4d0] Decoded frame with POC 189.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 189.
+[hevc @ 0x1ffeba0] Decoded frame with POC 188.
+[hevc @ 0x1fe5a00] Decoded frame with POC 187.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 190.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 191.
+[hevc @ 0x200c4d0] Decoded frame with POC 190.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 192.
+[hevc @ 0x1fe5a00] Decoded frame with POC 194.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 193.
+[hevc @ 0x1ffeba0] Decoded frame with POC 193.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 194.
+[hevc @ 0x200c4d0] Decoding SEI
+[hevc @ 0x200c4d0] Skipped PREFIX SEI 6
+[hevc @ 0x200c4d0] Decoded frame with POC 192.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 195.
+[hevc @ 0x1fe5a00] Decoded frame with POC 195.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] Decoded frame with POC 201.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    8 fps=0.5 q=9.9 size=N/A time=00:00:08.00 bitrate=N/A speed=0.507x    [hevc @ 0x1fe5a00] Output frame with POC 196.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 197.
+[hevc @ 0x200c4d0] Decoded frame with POC 198.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 198.
+[hevc @ 0x1ffeba0] Decoded frame with POC 197.
+[hevc @ 0x1fe5a00] Decoded frame with POC 196.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 199.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 200.
+[hevc @ 0x200c4d0] Decoded frame with POC 199.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 201.
+[hevc @ 0x1fe5a00] Decoded frame with POC 200.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 202.
+[hevc @ 0x1ffeba0] Decoded frame with POC 209.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 203.
+[hevc @ 0x200c4d0] Decoded frame with POC 205.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 204.
+[hevc @ 0x200c4d0] Decoded frame with POC 204.
+[hevc @ 0x1fe5a00] Decoded frame with POC 202.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 205.
+[hevc @ 0x1ffeba0] Decoded frame with POC 203.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 206.
+[hevc @ 0x1fe5a00] Decoded frame with POC 206.
+[hevc @ 0x1ffeba0] Decoded frame with POC 207.
+[file @ 0x227be30] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227c5d0] Statistics: 0 seeks, 2 writeouts
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 207.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 208.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 209.
+[hevc @ 0x1fe5a00] Decoded frame with POC 215.
+[hevc @ 0x200c4d0] Decoded frame with POC 208.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    9 fps=0.6 q=12.8 size=N/A time=00:00:09.00 bitrate=N/A speed=0.551x    [hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 210.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 211.
+[hevc @ 0x1ffeba0] Decoded frame with POC 212.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 212.
+[hevc @ 0x1ffeba0] Decoded frame with POC 213.
+[hevc @ 0x1fe5a00] Decoded frame with POC 211.
+[hevc @ 0x200c4d0] Decoded frame with POC 210.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 213.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 214.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 215.
+[hevc @ 0x1fe5a00] Decoded frame with POC 221.
+[hevc @ 0x200c4d0] Decoded frame with POC 214.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 216.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 217.
+[hevc @ 0x1ffeba0] Decoded frame with POC 218.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 218.
+[hevc @ 0x200c4d0] Decoded frame with POC 216.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 219.
+[hevc @ 0x1fe5a00] Decoded frame with POC 217.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 220.
+[hevc @ 0x1ffeba0] Decoded frame with POC 219.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 221.
+[hevc @ 0x200c4d0] Decoded frame with POC 220.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 222.
+[hevc @ 0x1fe5a00] Decoded frame with POC 226.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 223.
+[hevc @ 0x1ffeba0] Decoded frame with POC 224.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 224.
+[hevc @ 0x1fe5a00] Decoded frame with POC 223.
+[hevc @ 0x200c4d0] Decoded frame with POC 222.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=    9 fps=0.5 q=12.8 size=N/A time=00:00:09.00 bitrate=N/A speed=0.534x    [hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 225.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 226.
+[hevc @ 0x1ffeba0] Decoded frame with POC 225.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 227.
+[hevc @ 0x200c4d0] Decoded frame with POC 231.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 228.
+[hevc @ 0x1fe5a00] Decoded frame with POC 229.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 229.
+[hevc @ 0x200c4d0] Decoded frame with POC 228.
+[hevc @ 0x1ffeba0] Decoded frame with POC 227.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 230.
+[hevc @ 0x1fe5a00] Decoded frame with POC 230.
+[hevc @ 0x1ffeba0] Decoded frame with POC 240.
+[file @ 0x227c460] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227da00] Statistics: 0 seeks, 2 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 231.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 232.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 233.
+[hevc @ 0x200c4d0] Decoded frame with POC 236.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 234.
+[hevc @ 0x1fe5a00] Decoded frame with POC 232.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 235.
+[hevc @ 0x1ffeba0] Decoded frame with POC 233.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 236.
+[hevc @ 0x200c4d0] Decoded frame with POC 234.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 237.
+[hevc @ 0x200c4d0] Decoded frame with POC 238.
+[hevc @ 0x1fe5a00] Decoded frame with POC 235.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 238.
+[hevc @ 0x1ffeba0] Decoded frame with POC 237.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=   10 fps=0.6 q=15.8 size=N/A time=00:00:10.00 bitrate=N/A speed=0.575x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 239.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 240.
+[hevc @ 0x1fe5a00] Decoded frame with POC 239.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 241.
+[hevc @ 0x1ffeba0] Decoded frame with POC 248.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 242.
+[hevc @ 0x200c4d0] Decoded frame with POC 244.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 243.
+[hevc @ 0x1fe5a00] Decoded frame with POC 241.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 244.
+[hevc @ 0x1fe5a00] Decoded frame with POC 245.
+[hevc @ 0x1ffeba0] Decoded frame with POC 242.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 245.
+[hevc @ 0x200c4d0] Decoded frame with POC 243.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 246.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 247.
+[hevc @ 0x200c4d0] Decoded frame with POC 247.
+[hevc @ 0x1fe5a00] Decoding SEI
+[hevc @ 0x1fe5a00] Skipped PREFIX SEI 6
+[hevc @ 0x1fe5a00] Decoded frame with POC 249.
+[hevc @ 0x1ffeba0] Decoded frame with POC 246.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 248.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 249.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 250.
+[hevc @ 0x1ffeba0] Decoded frame with POC 250.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 251.
+[hevc @ 0x200c4d0] Decoded frame with POC 255.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 252.
+[hevc @ 0x1fe5a00] Decoded frame with POC 253.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 253.
+[hevc @ 0x200c4d0] Decoded frame with POC 252.
+[hevc @ 0x1ffeba0] Decoded frame with POC 251.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 254.
+[hevc @ 0x1ffeba0] Decoded frame with POC 260.
+[hevc @ 0x1fe5a00] Decoded frame with POC 254.
+[file @ 0x227c3e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x2363930] Statistics: 0 seeks, 2 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 255.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=   11 fps=0.6 q=18.7 size=N/A time=00:00:11.00 bitrate=N/A speed=0.608x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 256.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 257.
+[hevc @ 0x200c4d0] Decoded frame with POC 258.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 258.
+[hevc @ 0x1ffeba0] Decoded frame with POC 257.
+[hevc @ 0x1fe5a00] Decoded frame with POC 256.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 259.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Decoded frame with POC 259.
+[hevc @ 0x1ffeba0] Output frame with POC 260.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 261.
+[hevc @ 0x1fe5a00] Decoded frame with POC 269.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 262.
+[hevc @ 0x1ffeba0] Decoded frame with POC 265.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 263.
+[hevc @ 0x1fe5a00] Decoded frame with POC 262.
+[hevc @ 0x200c4d0] Decoded frame with POC 261.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 264.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 265.
+[hevc @ 0x1ffeba0] Decoded frame with POC 263.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 266.
+[hevc @ 0x1fe5a00] Decoded frame with POC 266.
+[hevc @ 0x1ffeba0] Decoded frame with POC 267.
+[hevc @ 0x200c4d0] Decoded frame with POC 264.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 267.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 268.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 269.
+[hevc @ 0x1fe5a00] Decoded frame with POC 276.
+[hevc @ 0x200c4d0] Decoded frame with POC 268.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 270.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 271.
+[hevc @ 0x1ffeba0] Decoded frame with POC 273.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] Decoded frame with POC 270.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 272.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 273.
+[hevc @ 0x1fe5a00] Decoded frame with POC 271.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 274.
+[hevc @ 0x1ffeba0] Decoded frame with POC 272.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 275.
+[hevc @ 0x200c4d0] Decoded frame with POC 274.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=   11 fps=0.6 q=18.7 size=N/A time=00:00:11.00 bitrate=N/A speed=0.591x    [hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 276.
+[hevc @ 0x1ffeba0] Decoded frame with POC 282.
+[hevc @ 0x1fe5a00] Decoded frame with POC 275.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 277.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 278.
+[hevc @ 0x200c4d0] Decoded frame with POC 279.
+[hevc @ 0x1ffeba0] Decoded frame with POC 278.
+[hevc @ 0x1fe5a00] Decoded frame with POC 277.
+[file @ 0x227e2f0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227c760] Statistics: 0 seeks, 2 writeouts
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 279.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 280.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 281.
+[hevc @ 0x1fe5a00] Decoded frame with POC 281.
+[hevc @ 0x200c4d0] Decoded frame with POC 280.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 282.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 283.
+[hevc @ 0x1ffeba0] Decoded frame with POC 288.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 284.
+[hevc @ 0x200c4d0] Decoded frame with POC 285.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 285.
+[hevc @ 0x1fe5a00] Decoded frame with POC 283.
+[hevc @ 0x1ffeba0] Decoded frame with POC 284.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+frame=   12 fps=0.6 q=21.7 size=N/A time=00:00:12.00 bitrate=N/A speed=0.628x    [hevc @ 0x1fe5a00] Output frame with POC 286.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 287.
+[hevc @ 0x200c4d0] Decoded frame with POC 286.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 288.
+[hevc @ 0x1ffeba0] Decoded frame with POC 292.
+[hevc @ 0x1fe5a00] Decoded frame with POC 287.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 289.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 290.
+[hevc @ 0x200c4d0] Decoded frame with POC 290.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 291.
+[hevc @ 0x1ffeba0] Decoded frame with POC 291.
+[hevc @ 0x200c4d0] Decoded frame with POC 298.
+[hevc @ 0x1fe5a00] Decoded frame with POC 289.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 292.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 293.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 294.
+[hevc @ 0x1fe5a00] Decoded frame with POC 295.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 295.
+[hevc @ 0x1ffeba0] Decoded frame with POC 293.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] Decoded frame with POC 294.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 296.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 297.
+[hevc @ 0x1fe5a00] Decoded frame with POC 296.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 298.
+[hevc @ 0x1ffeba0] Decoded frame with POC 297.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 299.
+[hevc @ 0x200c4d0] Decoded frame with POC 305.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 300.
+[hevc @ 0x1fe5a00] Decoded frame with POC 302.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 301.
+[hevc @ 0x1fe5a00] Decoded frame with POC 301.
+[hevc @ 0x1ffeba0] Decoded frame with POC 299.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 302.
+[hevc @ 0x200c4d0] Decoded frame with POC 300.
+[hevc @ 0x1ffeba0] Decoded frame with POC 303.
+[file @ 0x20f8ff0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227d980] Statistics: 0 seeks, 2 writeouts
+frame=   13 fps=0.7 q=24.7 size=N/A time=00:00:13.00 bitrate=N/A speed=0.661x    [Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 303.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 304.
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 305.
+[hevc @ 0x1fe5a00] Decoded frame with POC 311.
+[hevc @ 0x200c4d0] Decoded frame with POC 304.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 306.
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 307.
+[hevc @ 0x1ffeba0] Decoded frame with POC 308.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] Decoded frame with POC 306.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+frame=   13 fps=0.6 q=24.7 size=N/A time=00:00:13.00 bitrate=N/A speed=0.634x    [hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 308.
+[hevc @ 0x1fe5a00] Decoded frame with POC 307.
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 309.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 310.
+[hevc @ 0x1ffeba0] Decoded frame with POC 309.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 311.
+[hevc @ 0x200c4d0] Decoded frame with POC 310.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 312.
+[hevc @ 0x1fe5a00] Decoded frame with POC 319.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 313.
+[hevc @ 0x1fe5a00] Decoded frame with POC 313.
+[hevc @ 0x200c4d0] Decoded frame with POC 312.
+[hevc @ 0x1ffeba0] Decoded frame with POC 315.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 314.
+[hevc @ 0x1ffeba0] Decoded frame with POC 314.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 315.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+frame=   13 fps=0.6 q=24.7 size=N/A time=00:00:13.00 bitrate=N/A speed=0.61x    [hevc @ 0x1fe5a00] Output frame with POC 316.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 317.
+[hevc @ 0x1fe5a00] Decoded frame with POC 317.
+[hevc @ 0x200c4d0] Decoded frame with POC 316.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 318.
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 319.
+[hevc @ 0x1ffeba0] Decoded frame with POC 318.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 320.
+[hevc @ 0x200c4d0] Decoded frame with POC 325.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 321.
+[hevc @ 0x1fe5a00] Decoded frame with POC 322.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 322.
+[hevc @ 0x1ffeba0] Decoded frame with POC 320.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] Decoded frame with POC 321.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] Output frame with POC 323.
+[hevc @ 0x200c4d0] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 324.
+[hevc @ 0x1fe5a00] Decoded frame with POC 323.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 325.
+[hevc @ 0x200c4d0] Decoded frame with POC 334.
+[hevc @ 0x1ffeba0] Decoded frame with POC 324.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 326.
+[hevc @ 0x1fe5a00] Decoded frame with POC 330.
+[hevc @ 0x1ffeba0] Decoded frame with POC 326.
+[file @ 0x227b0f0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x22ca880] Statistics: 0 seeks, 2 writeouts
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+frame=   14 fps=0.6 q=24.8 size=N/A time=00:00:14.00 bitrate=N/A speed=0.633x    [hevc @ 0x200c4d0] Output frame with POC 327.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 328.
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 329.
+[hevc @ 0x200c4d0] Decoded frame with POC 327.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x200c4d0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x200c4d0] Output frame with POC 330.
+[hevc @ 0x1ffeba0] Decoded frame with POC 329.
+[hevc @ 0x200c4d0] Decoded frame with POC 331.
+[hevc @ 0x1fe5a00] Decoded frame with POC 328.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1fe5a00] Output frame with POC 331.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1ffeba0] nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0
+[hevc @ 0x1ffeba0] Output frame with POC 332.
+[hevc @ 0x200c4d0] Output frame with POC 333.
+[hevc @ 0x1ffeba0] Decoded frame with POC 333.
+[hevc @ 0x1fe5a00] Decoded frame with POC 332.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[hevc @ 0x1fe5a00] Output frame with POC 334.
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[Parsed_fps_0 @ 0x201a6c0] Dropping 1 frame(s).
+[file @ 0x20f8ff0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x227e2f0] Statistics: 0 seeks, 2 writeouts
+No more output streams to write to, finishing.
+frame=   15 fps=0.7 q=24.8 Lsize=N/A time=00:00:15.00 bitrate=N/A speed=0.668x    
+video:1084kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (./Tears_400_x265.mp4):
+  Input stream #0:0 (video): 335 packets read (701773 bytes); 335 frames decoded; 
+  Total: 335 packets (701773 bytes) demuxed
+Output file #0 (./out_img/ffmpeg-msa_x265_%d.jpg):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1109604 bytes); 
+  Total: 15 packets (1109604 bytes) muxed
+bench: utime=22.300s
+335 frames successfully decoded, 0 decoding errors
+bench: maxrss=72432kB
+[Parsed_fps_0 @ 0x201a6c0] 335 frames in, 15 frames out; 320 frames dropped, 0 frames duplicated.
+[AVIOContext @ 0x1fd6220] Statistics: 734659 bytes read, 2 seeks
